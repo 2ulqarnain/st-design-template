@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,6 +17,20 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.button-hover{
+  box-shadow: 0px 0px 0px #11b494;
+  transition: box-shadow 100ms;
+}
+
+.button-hover:hover{
+  box-shadow: 0px 0px 0px 3px #187e6a50;
+}
+
+input:focus{
+  outline:none;
+  box-shadow: 0px 0px 0px 2px #11b494;
 }
 
 @media (prefers-color-scheme: dark) {
